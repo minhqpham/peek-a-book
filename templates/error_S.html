@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <h1>Error while searching</h1>
+
+    {{ message }}
+    <a href="{{ url_for('search') }}">Try again</a>
+{% endblock %}

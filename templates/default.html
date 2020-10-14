@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    peek-a-book
+{% endblock %}
+
+{% block body %}
+    <h1> peek-peek-a-peek-a-BOOK </h1>
+    <p>
+        peek-a-book is a book review website, where users can register and use their accounts to search for books, leave reviews for individual books, and see the reviews made by other people. You can also query for our book details and book reviews supported by Goodreads, the world’s largest site for readers and book recommendations.
+    </p>
+
+    <ul>
+        <li>
+            <a href="{{ url_for('register') }}">Register</a>
+        </li>
+        <li>
+            <a href="{{ url_for('login') }}">Log In</a>
+        </li>
+    </ul>
+{% endblock %}
+
